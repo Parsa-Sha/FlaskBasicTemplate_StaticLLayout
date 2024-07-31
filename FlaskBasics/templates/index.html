@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-color: {{ bg_color }};">
+    <div class="container">
+        <h2 style="color: {{ text_color}};">Home</h2>
+        <form method="POST">
+            <button type="submit" name="home" class="home">Home</button>
+            <button type="submit" name="dark_blue" class="dark-blue">Dark Blue</button>
+            <button type="submit" name="light_blue" class="light-blue">Light Blue</button>
+            <button type="submit" name="black" class="black">Black</button>
+        </form>
+    </div>
+</body>
+</html>
